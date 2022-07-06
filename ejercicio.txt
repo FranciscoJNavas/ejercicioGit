@@ -1,0 +1,144 @@
+
+fnavas@Administrator MINGW64 /c/Ejercicio en pareja
+$ get init
+bash: get: command not found
+
+fnavas@Administrator MINGW64 /c/Ejercicio en pareja
+$ git init
+Initialized empty Git repository in C:/Ejercicio en pareja/.git/
+
+fnavas@Administrator MINGW64 /c/Ejercicio en pareja (master)
+$ git remote add origin https://github.com/FranciscoJNavas/ejercicioGit.git
+
+fnavas@Administrator MINGW64 /c/Ejercicio en pareja (master)
+$ git add .
+
+fnavas@Administrator MINGW64 /c/Ejercicio en pareja (master)
+$ git commit -m "Agregando archivo README"
+[master (root-commit) 7e92bb2] Agregando archivo README
+ 1 file changed, 1 insertion(+)
+ create mode 100644 README.md
+
+fnavas@Administrator MINGW64 /c/Ejercicio en pareja (master)
+$ git push origin master
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 247 bytes | 247.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/FranciscoJNavas/ejercicioGit.git
+ * [new branch]      master -> master
+
+fnavas@Administrator MINGW64 /c/Ejercicio en pareja (master)
+$ git add .
+
+fnavas@Administrator MINGW64 /c/Ejercicio en pareja (master)
+$ git commit -m "Agregando archivos para compartir"
+[master 7202398] Agregando archivos para compartir
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 app.js
+ create mode 100644 archivo1.js
+ create mode 100644 nuevoEjercicioGit.js
+
+fnavas@Administrator MINGW64 /c/Ejercicio en pareja (master)
+$ git push origin master
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 331 bytes | 165.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/FranciscoJNavas/ejercicioGit.git
+   7e92bb2..7202398  master -> master
+
+fnavas@Administrator MINGW64 /c/Ejercicio en pareja (master)
+$ git pull origin master
+remote: Enumerating objects: 6, done.
+remote: Counting objects: 100% (6/6), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 4 (delta 2), reused 4 (delta 2), pack-reused 0
+Unpacking objects: 100% (4/4), 506 bytes | 21.00 KiB/s, done.
+From https://github.com/FranciscoJNavas/ejercicioGit
+ * branch            master     -> FETCH_HEAD
+   7202398..35fef53  master     -> origin/master
+Updating 7202398..35fef53
+Fast-forward
+ homero.js   | 0
+ mila.js     | 0
+ santiago.js | 0
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 homero.js
+ create mode 100644 mila.js
+ create mode 100644 santiago.js
+
+fnavas@Administrator MINGW64 /c/Ejercicio en pareja (master)
+$ git add .
+
+fnavas@Administrator MINGW64 /c/Ejercicio en pareja (master)
+$ git commit -m "Modificando el archivo nuevoEjercicioGit"
+[master 6cf8d77] Modificando el archivo nuevoEjercicioGit
+ 1 file changed, 1 insertion(+)
+
+fnavas@Administrator MINGW64 /c/Ejercicio en pareja (master)
+$ git push origin master
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 329 bytes | 329.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/FranciscoJNavas/ejercicioGit.git
+   35fef53..6cf8d77  master -> master
+
+fnavas@Administrator MINGW64 /c/Ejercicio en pareja (master)
+$ git pull origin master
+remote: Enumerating objects: 9, done.
+remote: Counting objects: 100% (8/8), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 5 (delta 2), reused 5 (delta 2), pack-reused 0
+Unpacking objects: 100% (5/5), 540 bytes | 24.00 KiB/s, done.
+From https://github.com/FranciscoJNavas/ejercicioGit
+ * branch            master     -> FETCH_HEAD
+   6cf8d77..44116b6  master     -> origin/master
+Updating 6cf8d77..44116b6
+Fast-forward
+ mila.js | 1 +
+ 1 file changed, 1 insertion(+)
+
+fnavas@Administrator MINGW64 /c/Ejercicio en pareja (master)
+$ git add .
+
+fnavas@Administrator MINGW64 /c/Ejercicio en pareja (master)
+$ git commit -m "Modificando el archivo app.js"
+[master cf9e1a3] Modificando el archivo app.js
+ 1 file changed, 2 insertions(+)
+
+fnavas@Administrator MINGW64 /c/Ejercicio en pareja (master)
+$ git push origin master
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 332 bytes | 332.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/FranciscoJNavas/ejercicioGit.git
+   44116b6..cf9e1a3  master -> master
+
+fnavas@Administrator MINGW64 /c/Ejercicio en pareja (master)
+$ git pull origin master
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 1), reused 3 (delta 1), pack-reused 0
+Unpacking objects: 100% (3/3), 381 bytes | 27.00 KiB/s, done.
+From https://github.com/FranciscoJNavas/ejercicioGit
+ * branch            master     -> FETCH_HEAD
+   cf9e1a3..eccd3ea  master     -> origin/master
+Updating cf9e1a3..eccd3ea
+Fast-forward
+ app.js | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+fnavas@Administrator MINGW64 /c/Ejercicio en pareja (master)
+$
